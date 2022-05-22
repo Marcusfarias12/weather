@@ -26,7 +26,7 @@ lat,lon =
 API_key = ''
 
 def city_forecast(lat, lon):
-    response = requests.get(f'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude=minutely,alerts,daily&appid=61d6220ac2ca15f69ee666ea8658b034')
+    response = requests.get(f'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude=minutely,alerts,daily&appid=')
     return response.json()
 
 with open('weather\weather_info.json', 'w', encoding='utf-8') as f:
