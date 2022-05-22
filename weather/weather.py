@@ -22,8 +22,8 @@ current_time = now.strftime("%H_%M_%S")
 current_day = today.strftime("%d_%m ")
 time_now = current_day + current_time
 
-lat,lon = -18.912594,-47.854576
-API_key = '61d6220ac2ca15f69ee666ea8658b034'
+lat,lon = 
+API_key = ''
 
 def city_forecast(lat, lon):
     response = requests.get(f'https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude=minutely,alerts,daily&appid=61d6220ac2ca15f69ee666ea8658b034')
